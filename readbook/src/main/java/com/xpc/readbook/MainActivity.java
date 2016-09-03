@@ -38,6 +38,6 @@ public class MainActivity extends AppCompatActivity implements ReadIntfaceView {
 
     @Override
     public void finish(Object o) {
-        progressText.setText("读书完成, 总共页数："+ ((Book)o).getPageCount());
+        progressText.setText("完成读书,总共页数："+ ((Book)o).getPageCount());
     }
 }

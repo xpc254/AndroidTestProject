@@ -7,6 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context="com.xpc.readbook.MainActivity">
 
     <TextView
@@ -15,14 +16,25 @@
         android:layout_height="wrap_content"
         android:textColor="@android:color/holo_red_dark"
         android:textSize="26sp"
-        android:text="Hello World!" />
+        android:text="等待..." />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:text="开始读书"
         android:onClick="onReadBook"
         android:id="@+id/button"
         android:layout_below="@+id/progressText"
          />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bookNameEdit" />
+
+    <Button
+        android:text="创建书本"
+        android:onClick="onAddBook"
+        style="@style/text_normal_style" />
 </LinearLayout>

@@ -19,11 +19,12 @@ public class BaseActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState, persistentState);
     }
 
+
     protected void setStatusBar(Activity activity, int color){
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
             activity.getWindow().setStatusBarColor(getResources().getColor(R.color.colorPrimaryDark)); //5.0以上的实现沉浸式状态栏
         }else{
-            setColor(activity,color);
+            setColor(activity,color); //4.4版本实现沉浸式状态栏
         }
     }
     /** * 设置状态栏颜色 * * @param activity 需要设置的activity * @param color 状态栏颜色值 */
